@@ -1,7 +1,7 @@
 {
     "name": "roost",
     "displayName": "roost",
-    "description": "Syntax highlighting for the roost language",
+    "description": "Basic Syntax highlighting for the roost language",
     "version": "0.0.1",
     "scripts": {
         "package": "vsce package"
