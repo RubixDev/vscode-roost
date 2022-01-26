@@ -1,0 +1,39 @@
+{
+    "name": "roost",
+    "displayName": "roost",
+    "description": "Syntax highlighting for the roost language",
+    "version": "0.0.1",
+    "scripts": {
+        "package": "vsce package"
+    },
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "roost",
+                "aliases": [
+                    "roost"
+                ],
+                "extensions": [
+                    ".ro"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "roost",
+                "scopeName": "source.roost",
+                "path": "./syntaxes/roost.tmLanguage.json"
+            }
+        ]
+    },
+    "devDependencies": {
+        "vsce": "^2.6.4"
+    }
+}
