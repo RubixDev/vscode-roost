@@ -43,7 +43,7 @@
 				},
 				{
 					"name": "storage.type.roost",
-					"match": "\\bvar\\b"
+					"match": "\\b(var|fun)\\b"
 				}
 			]
 		},
