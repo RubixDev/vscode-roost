@@ -69,26 +69,24 @@
 					"name": "string.quoted.double.roost",
 					"begin": "\"",
 					"end": "\"",
-					"patterns": [
-						{
-							"name": "constant.character.escape.roost",
-							"match": "\\\\(n|r|t)"
-						}
-					]
+					"patterns": [{
+						"include": "#escapes"
+					}]
 				},
 				{
 					"name": "string.quoted.single.roost",
 					"begin": "'",
 					"end": "'",
-					"patterns": [
-						{
-							"name": "constant.character.escape.roost",
-							"match": "\\\\(n|r|t)"
-						}
-					]
+					"patterns": [{
+						"include": "#escapes"
+					}]
 				}
 			]
 		},
+		"escapes": {
+            "name": "constant.character.escape.roost",
+            "match": "\\\\([\\\\'\"abfnrtv]|[0-7]{3}|x[0-7a-fA-F]{2}|u[0-7a-fA-F]{4}|U[0-7a-fA-F]{8})"
+        },
 		"functions": {
 			"patterns": [
 				{
