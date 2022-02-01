@@ -91,7 +91,7 @@
 			"patterns": [
 				{
 					"name": "support.function.roost",
-					"match": "\\b(printl?|typeOf)\\b"
+					"match": "\\b(printl?|typeOf|exit)\\b"
 				},
 				{
 					"name": "meta.function.definition.roost",
