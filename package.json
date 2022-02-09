@@ -2,13 +2,14 @@
     "name": "roost",
     "displayName": "roost",
     "description": "Basic Syntax highlighting for the roost language",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "url": "https://github.com/RubixDev/vscode-roost"
     },
     "license": "GPL-2.0-only",
     "scripts": {
-        "package": "vsce package"
+        "package": "vsce package",
+        "install": "npm run package && code --install-extension roost-\"$npm_package_version\".vsix"
     },
     "engines": {
         "vscode": "^1.63.0"
