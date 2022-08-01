@@ -39,11 +39,15 @@
 			"patterns": [
 				{
 					"name": "keyword.control.roost",
-					"match": "\\b(if|else|loop|while|for|return|break|continue|in)\\b"
+					"match": "\\b(if|else|loop|while|for|return|break|continue|in|try|catch)\\b"
 				},
 				{
 					"name": "storage.type.roost",
-					"match": "\\b(var|fun)\\b"
+					"match": "\\b(var|fun|class)\\b"
+				},
+				{
+					"name": "storage.modifier.static.roost",
+					"match": "\\bstatic\\b"
 				}
 			]
 		},
@@ -91,7 +95,7 @@
 			"patterns": [
 				{
 					"name": "support.function.roost",
-					"match": "\\b(printl?|typeOf|exit)\\b"
+					"match": "\\b(e?printl?|typeOf|exit|assert|throw|debug)\\b"
 				},
 				{
 					"name": "meta.function.definition.roost",
